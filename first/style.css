@@ -1,0 +1,122 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #f2f2f2, #e0e0e0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  min-height: 100vh;
+}
+
+/* Portfolio Container */
+.portfolio {
+  background-color: #fff;
+  max-width: 400px;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  padding: 25px 30px;
+  text-align: center;
+}
+
+/* Profile Header */
+ .profile {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ddd;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Profile Image */
+.profile-img {
+  margin: 20px 0;
+}
+
+.pro-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #555;
+}
+
+/* Name */
+.name {
+  font-size: 22px;
+  color: #222;
+  margin-top: 10px;
+}
+
+/* Skills List */
+.skill-list {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.list {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.list:hover {
+  background-color: #e0e0e0;
+}
+
+/* Links */
+.links {
+  margin-top: 25px;
+}
+
+.links a {
+  display: inline-block;
+  margin: 10px 15px 0;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #333;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.links a:hover {
+  background-color: #555;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .portfolio {
+    padding: 20px;
+  }
+
+  .pro-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .name {
+    font-size: 20px;
+  }
+
+  .list {
+    font-size: 14px;
+  }
+
+  .links a {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+}
