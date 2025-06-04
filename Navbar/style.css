@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    color:white;
+    text-align: center;
+    padding: 10px 20px;
+    z-index: 100;
+}
+
+.card-section{
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+    justify-content: center;
+    flex-wrap: wrap
+}
+
+.card{
+    position: relative;
+    width: 300px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+
+}
+
+.card:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.badge{
+    position: absolute;
+    top: 10;
+    left: 10;
+    background-color: crimson;
+    color: white;
+    padding: 10px 20px ;
+    font-size: 12px;
+    border-radius: 4px;
+    z-index: 10;
+}
+
+img{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
